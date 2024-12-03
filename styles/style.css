@@ -1,38 +1,115 @@
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    color: #333;
-    line-height: 1.6;
+/* General */
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
 }
 
+body {
+    background-color: #f4f4f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header */
 header {
-    background-color: #333;
-    color: #fff;
-    padding: 20px;
-    text-align: center;
-}
-
-h1 {
-    font-size: 2.5rem;
-}
-
-section {
-    padding: 20px;
-}
-
-#sobre-mi, #proyectos, #contacto {
-    background-color: #fff;
-    margin: 20px;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-}
-
-footer {
-    text-align: center;
-    padding: 10px;
-    background-color: #333;
+    background-color: #2a2a72;
     color: white;
+    padding: 40px 0;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+header p {
+    font-size: 1.2rem;
+    animation: fadeIn 3s ease-in-out;
+}
+
+/* Section */
+section {
+    padding: 40px 0;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #2a2a72;
+}
+
+/* Proyectos */
+.proyecto {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    margin-bottom: 20px;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.proyecto:hover {
+    transform: translateY(-10px);
+}
+
+.proyecto a {
+    color: #2a2a72;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.proyecto a:hover {
+    text-decoration: underline;
+}
+
+/* Contacto */
+#contacto p {
+    font-size: 1.2rem;
+}
+
+#contacto a {
+    color: #2a2a72;
+    text-decoration: none;
+}
+
+#contacto a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    background-color: #2a2a72;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+footer p {
+    font-size: 1rem;
+}
+
+/* Container */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
